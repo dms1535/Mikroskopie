@@ -1,0 +1,7 @@
+{{ $taxonomyObject := .Site.Taxonomies.Treffen }}
+<h5>Teilnahme bei Treffen:</h5>
+<ul>
+    {{ range $taxonomyObject.Alphabetical }}
+  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a></li>
+{{ end }}
+</ul>

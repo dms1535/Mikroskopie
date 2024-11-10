@@ -1,0 +1,6 @@
+# exclude JS dependencies
+node_modules
+# exclude Hugo's output
+public
+# exclude obsidian
+.obsidian

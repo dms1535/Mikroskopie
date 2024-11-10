@@ -1,0 +1,24 @@
+{{ $file := .Get "file" }}
+{{ $thumbDir := "thumbs" }}
+{{ $titel := "" }}
+{{ $desc := "" }}
+{{ $thumbWidth := 0 }}
+{{ $thumbHeight := 0 }}
+{{ $imgWidth := 0 }}
+{{ $imgHeight := 0 }}
+
+
+
+{{ with .Get "thumbDir" }} {{ $thumbDir = . }} {{ end }}
+{{ with .Get "titel" }} {{ $titel = . }} {{ end }}
+{{ with .Get "desc" }} {{ $desc = . }} {{ end }}
+{{ with .Get "thumbWidth" }} {{ $thumbWidth = . }} {{ end }}
+{{ with .Get "thumbHeight" }} {{ $thumbHeight = . }} {{ end }}
+{{ with .Get "imgWidth" }} {{ $imgWidth = . }} {{ end }}
+{{ with .Get "imgHeight" }} {{ $imgHeight = . }} {{ end }}
+
+
+<a href = "{{ $file }}"   data-ngdesc="{{ $desc }}"  data-ngThumb = "{{ $thumbDir }}/{{ $file }} " 
+data-ngimageWidth = {{ $imgWidth }}  data-ngimageHeight = {{ $imgHeight }} 
+data-ngthumbImgWidth  = {{ $thumbWidth }}  data-ngthumbImgHeight  = {{ $thumbHeight }} 
+>{{ $titel }}</a>
