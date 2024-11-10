@@ -27,3 +27,4 @@ resources:
 {{< openstreetmap mapName="fundorte_69440" scale="14" moreControl="false" tilelayersControl="false" embedControl="false" datalayersControl="false" captionBar="false" searchControl="false" 
 mapWidth="1000px" >}}
 
+ 
