@@ -1,0 +1,3 @@
+{{ $subject := default "" (.Get "subject") -}}
+{{- $text := default "Mich" (.Get "text") -}}
+<a href="mailto:GastrotrichaFeedback@dms-soft.de?subject={{ $subject }}">{{ $text }}</a>
